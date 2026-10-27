@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Danora</title>
+  <style>
+    :root {
+      --bg: #080C16;
+      --card-bg: #0F172A;
+      --primary: #10B981;
+      --secondary: #00F2FE;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+      --border: #1E293B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 32px 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--primary);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      color: var(--secondary);
+      margin-top: 32px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    strong {
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy for Danora</h1>
+    <div class="badge">Effective Date: October 27, 2026</div>
+
+    <p>At <strong>Danora</strong> ("we", "our", or "the App"), your financial privacy and data sovereignty are our utmost priorities. This Privacy Policy describes how Danora handles, collects, and protects your information when you use our mobile and desktop applications.</p>
+
+    <h2>1. Summary of Core Principles</h2>
+    <ul>
+      <li><strong>Local-First Architecture:</strong> All your accounts, transactions, balances, and budgets are stored locally on your device in an offline SQLite database.</li>
+      <li><strong>No Third-Party Financial Tracking:</strong> We do NOT sell, lease, or broker your personal financial records to advertising networks or data aggregators.</li>
+      <li><strong>No Remote Credentials Stored:</strong> Danora does not require or store your online banking passwords, credit card CVVs, or bank login credentials.</li>
+    </ul>
+
+    <h2>2. Information We Handle</h2>
+    <p><strong>A. Data Stored Locally on Your Device</strong></p>
+    <ul>
+      <li><strong>Financial Entries:</strong> Transaction descriptions, amounts, categories, account balances, and dates that you manually input or import.</li>
+      <li><strong>Asset & Debt Portfolios:</strong> Names of accounts, initial balances, and asset categories (e.g., cash, bank accounts, investments, properties, loans).</li>
+      <li><strong>Security PIN & Biometrics:</strong> Your optional 4-digit PIN hash is stored in private local application storage. Biometric authentication (Fingerprint, Face Unlock) is handled entirely by your device’s operating system security module (Android BiometricPrompt); Danora never accesses or stores your raw biometric data.</li>
+    </ul>
+
+    <p><strong>B. Technical & Network Information</strong></p>
+    <ul>
+      <li><strong>In-App Purchases:</strong> If you subscribe to Danora Pro, transactions are processed directly by the official Google Play Billing system. We receive anonymized purchase tokens solely to verify your subscription status.</li>
+      <li><strong>In-App Updates & Market Prices:</strong> The App may query public APIs or release endpoints solely to fetch current gold/currency rates or notify you of newer app versions. No identifying personal data is transmitted.</li>
+    </ul>
+
+    <h2>3. Data Storage & Backup</h2>
+    <p>Your database is maintained in your device's sandboxed local application directory. When you export a JSON backup file, you have full control over where the file is stored (e.g., local storage, private cloud drive).</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>Danora utilizes official platform developer libraries that may process minimal metadata in compliance with Google Play Developer Policies:</p>
+    <ul>
+      <li><strong>Google Play Billing</strong> (In-App Subscriptions)</li>
+      <li><strong>Google Play In-App Updates</strong> (Background App Updates)</li>
+    </ul>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Danora does not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children.</p>
+
+    <h2>6. Your Rights & Data Deletion</h2>
+    <p>Because all financial records are stored locally on your device, you have complete sovereignty over your data. You may delete any transaction, account, or ledger entry at any time within the App. Uninstalling the App or clearing application data from your device settings permanently removes all locally stored data.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy, please contact the Danora Development Team.</p>
+
+    <div class="footer">
+      &copy; 2026 Danora. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
