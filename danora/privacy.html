@@ -79,7 +79,7 @@
 <body>
   <div class="container">
     <h1>Privacy Policy for Danora</h1>
-    <div class="badge">Effective Date: October 27, 2026</div>
+    <div class="badge">Effective Date: October 27, 2026 · Last Updated: October 29, 2026</div>
 
     <p>At <strong>Danora</strong> ("we", "our", or "the App"), your financial privacy and data sovereignty are our utmost priorities. This Privacy Policy describes how Danora handles, collects, and protects your information when you use our mobile and desktop applications.</p>
 
@@ -101,17 +101,20 @@
     <p><strong>B. Technical & Network Information</strong></p>
     <ul>
       <li><strong>In-App Purchases:</strong> If you subscribe to Danora Pro, transactions are processed directly by the official Google Play Billing system. We receive anonymized purchase tokens solely to verify your subscription status.</li>
-      <li><strong>In-App Updates & Market Prices:</strong> The App may query public APIs or release endpoints solely to fetch current gold/currency rates or notify you of newer app versions. No identifying personal data is transmitted.</li>
+      <li><strong>In-App Updates & Market Prices:</strong> The App contacts <em>CoinGecko</em> (api.coingecko.com) to fetch live gold/currency prices and <em>GitHub</em> (raw.githubusercontent.com) to check for newer app versions. These requests contain no financial data or account information; like any internet request, the receiving server can see your IP address and basic device/network metadata.</li>
+      <li><strong>Device Identifier:</strong> The App generates a random installation ID (e.g. DNR-XXXX-XXXX-XXXX) stored only on your device. It is used to bind your Pro license or VIP code to this device and is not linked to your name, phone number or advertising ID.</li>
     </ul>
 
     <h2>3. Data Storage & Backup</h2>
-    <p>Your database is maintained in your device's sandboxed local application directory. When you export a JSON backup file, you have full control over where the file is stored (e.g., local storage, private cloud drive).</p>
+    <p>Your database is maintained in your device's sandboxed local application directory and is excluded from automatic cloud backups. When you export a backup, you have full control over where the file is stored (e.g., local storage, private cloud drive). You may protect backups with a password; encrypted backups (.danora) use AES-256-GCM and cannot be read without that password, which we never receive and cannot recover.</p>
 
     <h2>4. Third-Party Services</h2>
     <p>Danora utilizes official platform developer libraries that may process minimal metadata in compliance with Google Play Developer Policies:</p>
     <ul>
       <li><strong>Google Play Billing</strong> (In-App Subscriptions)</li>
       <li><strong>Google Play In-App Updates</strong> (Background App Updates)</li>
+      <li><strong>CoinGecko API</strong> (Public gold &amp; currency price data, no account required)</li>
+      <li><strong>GitHub</strong> (Hosting of the public app-version manifest)</li>
     </ul>
 
     <h2>5. Children's Privacy</h2>
