@@ -79,7 +79,7 @@
 <body>
   <div class="container">
     <h1>Privacy Policy for Danora</h1>
-    <div class="badge">Effective Date: October 27, 2026 · Last Updated: October 29, 2026</div>
+    <div class="badge">Effective Date: October 30, 2026 · Last Updated: October 30, 2026</div>
 
     <p>At <strong>Danora</strong> ("we", "our", or "the App"), your financial privacy and data sovereignty are our utmost priorities. This Privacy Policy describes how Danora handles, collects, and protects your information when you use our mobile and desktop applications.</p>
 
@@ -101,27 +101,35 @@
     <p><strong>B. Technical & Network Information</strong></p>
     <ul>
       <li><strong>In-App Purchases:</strong> If you subscribe to Danora Pro, transactions are processed directly by the official Google Play Billing system. We receive anonymized purchase tokens solely to verify your subscription status.</li>
-      <li><strong>In-App Updates & Market Prices:</strong> The App contacts <em>CoinGecko</em> (api.coingecko.com) to fetch live gold/currency prices and <em>GitHub</em> (raw.githubusercontent.com) to check for newer app versions. These requests contain no financial data or account information; like any internet request, the receiving server can see your IP address and basic device/network metadata.</li>
+      <li><strong>In-App Updates & Market Prices:</strong> The App contacts <em>CoinGecko</em> (api.coingecko.com) to fetch live gold, currency and cryptocurrency prices (the App downloads a public list of the top 250 coins and matches your holdings on the device, so which coins you own is never sent) and <em>GitHub</em> (raw.githubusercontent.com) to check for newer app versions. <em>Google Fonts</em> (fonts.gstatic.com) is contacted only when you export a PDF report in Chinese or Japanese, to download the matching font once (about 10 MB); it is then stored on your device. Fonts for all other languages are built into the App. These requests contain no financial data or account information; like any internet request, the receiving server can see your IP address and basic device/network metadata.</li>
+      <li><strong>Receipt Photos:</strong> When you use Snap Receipt, the photo is captured by the Google document scanner (part of Google Play services) and its text is read on your device by Google ML Kit. The photo and its text are not uploaded by Danora and are only used to pre-fill a transaction you review before saving. Google ML Kit may send Google anonymous diagnostic and usage metrics about the scanning features, which do not include your images or the recognized text.</li>
       <li><strong>Device Identifier:</strong> The App generates a random installation ID (e.g. DNR-XXXX-XXXX-XXXX) stored only on your device. It is used to bind your Pro license or VIP code to this device and is not linked to your name, phone number or advertising ID.</li>
     </ul>
 
     <h2>3. Data Storage & Backup</h2>
     <p>Your database is maintained in your device's sandboxed local application directory and is excluded from automatic cloud backups. When you export a backup, you have full control over where the file is stored (e.g., local storage, private cloud drive). You may protect backups with a password; encrypted backups (.danora) use AES-256-GCM and cannot be read without that password, which we never receive and cannot recover.</p>
+    <p><strong>Automatic Drive Backup (optional):</strong> If you connect Google Drive (or another location) in Backup &amp; Restore, the App overwrites one encrypted file (.danora, AES-256-GCM) at the location you picked whenever your data changes. The file is written through Android's system file picker or a folder you choose on Windows and uploaded by your own Google Drive app; Danora has no access to the rest of your Drive and never receives the file or your password. Only a key derived from your password is kept on this device so it can re-encrypt each update. You can disconnect at any time.</p>
+    <p><strong>Google Drive Backup with Google Sign-In (optional):</strong> If you tap "Sign in with Google" in Backup &amp; Restore (Android), the App asks Google only for the drive.appdata permission and stores one encrypted backup file (.danora, AES-256-GCM) in the hidden application data folder of your own Google Drive, overwriting it whenever your data changes. This permission lets Danora see and change only the files Danora itself created there; it cannot see, read or list any other file in your Drive. The backup is encrypted on your device before upload with a key derived from your backup password, so Google and the Danora developers cannot read it. Your Google account email address is kept only on this device to show which account is connected and to make sure backups are never sent to a different account. The backup goes directly from your device to Google Drive over HTTPS; it never passes through a server operated by us. When you reinstall the App or move to a new phone, you can sign in with the same Google account to download and restore that file with your password.</p>
 
     <h2>4. Third-Party Services</h2>
     <p>Danora utilizes official platform developer libraries that may process minimal metadata in compliance with Google Play Developer Policies:</p>
     <ul>
       <li><strong>Google Play Billing</strong> (In-App Subscriptions)</li>
       <li><strong>Google Play In-App Updates</strong> (Background App Updates)</li>
-      <li><strong>CoinGecko API</strong> (Public gold &amp; currency price data, no account required)</li>
+      <li><strong>CoinGecko API</strong> (Public gold, currency &amp; cryptocurrency price data, no account required)</li>
       <li><strong>GitHub</strong> (Hosting of the public app-version manifest)</li>
+      <li><strong>Google Fonts</strong> (One-time download of the Chinese/Japanese font for PDF reports; no user data sent)</li>
+      <li><strong>Google ML Kit &amp; Document Scanner</strong> (On-device receipt text recognition and camera scanning)</li>
+      <li><strong>Google Sign-In &amp; Google Drive API</strong> (Optional encrypted backup to the hidden app folder of your own Google Drive)</li>
     </ul>
+    <p><strong>Google API Services User Data Policy:</strong> Danora's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Google user data (your account email and the encrypted backup file) is used only to provide the backup and restore feature you turned on; it is not used for advertising, not sold, and not transferred to anyone else.</p>
 
     <h2>5. Children's Privacy</h2>
     <p>Danora does not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children.</p>
 
     <h2>6. Your Rights & Data Deletion</h2>
-    <p>Because all financial records are stored locally on your device, you have complete sovereignty over your data. You may delete any transaction, account, or ledger entry at any time within the App. Uninstalling the App or clearing application data from your device settings permanently removes all locally stored data.</p>
+    <p>Because all financial records are stored locally on your device, you have complete sovereignty over your data. You may delete any transaction, account, or ledger entry at any time within the App, or erase everything at once via Backup &amp; Restore &gt; Delete All Data (all financial records, the Trash and the automatic backups on the device are permanently deleted; your PIN, PRO license, language and currency are kept). Uninstalling the App or clearing application data from your device settings permanently removes all locally stored data.</p>
+    <p>To remove the Google Drive backup, tap Disconnect in Backup &amp; Restore and tick &quot;Also delete all Danora backups in Google Drive&quot; (the same option appears in Delete All Data). This deletes the backups of every device on that Google account and revokes Danora's Google permission. Alternatively, delete the hidden app data in Google Drive on the web: Settings &gt; Manage apps &gt; Danora Pro &gt; Options &gt; Delete hidden app data. You can also revoke access at any time at myaccount.google.com/connections.</p>
 
     <h2>7. Contact Us</h2>
     <p>If you have any questions or feedback regarding this Privacy Policy, please contact the Danora Development Team.</p>
